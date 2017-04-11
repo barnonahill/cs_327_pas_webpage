@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CS 327 PAs</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" </link>
+  <link href="css/style.css" rel="stylesheet" </link>
+
+</head>
+
+<body>
+  <header>
+    <h1 class="text-center">CS 327 Programming Assignments</h1>
+  </header>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <section id="pa1">
+        <div class="well">
+          <div class="container">
+            <h2>PA 1</h2>
+            <p>This program checks if a given <u>positive integer</u> satisfies the divisibility criteria of the numbers 2,3,4,5,6,8, and 9. Numbers larger than 7 digits will be truncated. If the number has more than 7 digits, issue the following warning
+              statement: “The number XXXXXXXX exceeds 7 digits and was truncated to 7 digits.”</p>
+            <div id="pa1-input" class="input">
+              <h3>Input Number: </h3>
+              <form onSubmit="return false;">
+                <input class="pa1-input" type="number" placeholder="XXXXXXX">
+                <button class="btn btn-success btn-large" id="pa1-submit" type="submit">Check Divisibility</button>
+              </form>
+            </div>
+
+            <!-- Output div created by jQuery in pa1.js -->
+          </div>
+        </div>
+      </section>
+
+      <section id="pa2">
+        <div class="well">
+          <div class="container">
+            <h2>PA 2</h2>
+            <div id="pa2-input" class="input">
+              <form onSubmit="return false;">
+                <h3>Pick a mode to use the Caesar Cipher:</h3>
+                <label class="radio-inline"><input id="pa2-encrypt" type="radio" name="mode" value="encrypt" checked><p>Encrypt</p></label>
+                <label class="radio-inline"><input id="pa2-decrypt" type="radio" name="mode" value="decrypt"><p>Decrypt</p></label>
+                <br>
+                <div id="pa2-tabs">
+                  <ul class="nav nav-tabs clearfix">
+                    <li id="text-tab" class="pa2-tab active"><a href="#text-tab-panel" data-toggle="tab">Text Input</a></li>
+                    <li id="file-tab" class="pa2-tab unselectedTab"><a href="#file-tab-panel" data-toggle="tab">.txt File Input</a></li>
+                  </ul>
+                </div>
+                <div id="pa2-tab-panels" class="tab-content clearfix">
+                  <div id="text-tab-panel" role="tabpanel" class="tab-pane fade in active">
+                    <table id="pa2-text-input-table">
+                      <tr>
+                        <span class="input-field" id="encrypt-field">
+                          <td><label for="input-msg"><p id="input-msg-p">Message to Encrypt: </p></label></td>
+                          <td><input type="text" name="input-msg" id="input-msg"></td>
+                        </span>
+                      </tr>
+                      <tr>
+                        <span class="shift-field input-field">
+                          <td><label for="shift"><p>Shift Value: </p></label></td>
+                          <td><input type="number" name="shift" id="text-panel-shift"></td>
+                        </span>
+                      </tr>
+                    </table>
+                  </div>
+
+                  <div id="file-tab-panel" role="tabpanel" class="tab-pane fade">
+                    <h3>File to Encrypt:</h3>
+                    <input type="file" name="file-input" id="file-input">
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-success btn-large" id="pa2-submit">Encrypt Message</button>
+              </form>
+            </div>
+
+            <!-- Output div created by jQuery in pa2.js -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer>
+    <div class="container-fluid">
+      <div class="well footer-well">
+        <p class="text-center">This web application was created by <author>Paul Barnhill.</author></p>
+        <p class="text-center"><a href="#">GitHub Repository</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/pa1.js"></script>
+  <script src="js/pa2.js"></script>
+</body>
+
+</html>

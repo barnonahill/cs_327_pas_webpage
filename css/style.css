@@ -1,0 +1,53 @@
+.hiddenPanel {
+  display: none;
+}
+
+#pa2-tabs ul li {
+  display: inline;
+  padding: 5px;
+  margin: 5px;
+  list-style-type: none;
+}
+
+table tr td {
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.output-table {
+  margin-bottom: 15px;
+}
+
+.output-table p {
+  margin: 5px 10px;
+}
+
+.radio-inline input {
+  margin-top: 1vw;
+}
+
+#pa2-text-input-table label p {
+  padding-top: 2vw;
+}
+
+.tab-content {
+  padding : 5px 15px;
+  margin-left: 9.5px
+
+}
+
+#pa2-submit {
+  margin-top: 15px;
+  margin-left: 8px;
+}
+
+#file-tab-panel {
+  margin-bottom: 59px;
+}
+
+/* Mobile Styling */
+@media screen and (max-width: 768px) {
+  .radio-inline input {
+    margin-top: 1.5vw;
+  }
+}
